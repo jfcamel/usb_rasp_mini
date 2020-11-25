@@ -7,7 +7,7 @@ Sheet 1 1
 Title "RaspberryPI USB serial shield mini"
 Date "2020-11-23"
 Rev ""
-Comp "BitEngineers"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""

@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jun/develop/biteng/rasp_uart_dongle/rasp_usb/rasp_usb.sch)
-    (date "Mon Nov 23 12:35:17 2020")
+    (date "Mon Nov 23 13:19:28 2020")
     (tool "Eeschema 5.1.8")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
@@ -101,7 +101,7 @@
       (tstamp 5FC6360E))
     (comp (ref D1)
       (value D_Small)
-      (footprint Diode_SMD:D_0603_1608Metric)
+      (footprint Diode_SMD:D_SOD-123)
       (datasheet ~)
       (libsource (lib Device) (part D_Small) (description "Diode, small symbol"))
       (sheetpath (names /) (tstamps /))

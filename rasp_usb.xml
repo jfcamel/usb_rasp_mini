@@ -2,7 +2,7 @@
 <export version="D">
   <design>
     <source>/home/jun/develop/biteng/rasp_uart_dongle/rasp_usb/rasp_usb.sch</source>
-    <date>Wed Nov 25 09:52:44 2020</date>
+    <date>Wed Nov 25 12:12:46 2020</date>
     <tool>Eeschema 5.1.8</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
@@ -19,14 +19,6 @@
     </sheet>
   </design>
   <components>
-    <comp ref="U2">
-      <value>FT230XQ</value>
-      <footprint>Package_DFN_QFN:QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm</footprint>
-      <datasheet>https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf</datasheet>
-      <libsource lib="Interface_USB" part="FT230XQ" description="Full Speed USB to Basic UART, QFN-16"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FBB244C</tstamp>
-    </comp>
     <comp ref="R3">
       <value>27</value>
       <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
@@ -59,14 +51,6 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FBC0A8F</tstamp>
     </comp>
-    <comp ref="C7">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0402_1005Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FBD283F</tstamp>
-    </comp>
     <comp ref="U1">
       <value>AMS1117-5.0</value>
       <footprint>Package_TO_SOT_SMD:SOT-223-3_TabPin2</footprint>
@@ -82,30 +66,6 @@
       <libsource lib="Connector_Generic" part="Conn_02x05_Odd_Even" description="Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FBEC2E7</tstamp>
-    </comp>
-    <comp ref="C3">
-      <value>4.7u</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FC2C6D8</tstamp>
-    </comp>
-    <comp ref="C2">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FC2CD99</tstamp>
-    </comp>
-    <comp ref="C1">
-      <value>100n</value>
-      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FC31952</tstamp>
     </comp>
     <comp ref="FB1">
       <value>Ferrite_Bead_Small</value>
@@ -140,8 +100,8 @@
       <tstamp>5FC7397A</tstamp>
     </comp>
     <comp ref="D2">
-      <value>LED_Small</value>
-      <footprint>LED_SMD:LED_0603_1608Metric</footprint>
+      <value>LED_PWR</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -149,7 +109,7 @@
     </comp>
     <comp ref="R5">
       <value>2.2k</value>
-      <footprint>Resistor_SMD:R_0603_1608Metric</footprint>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
@@ -178,6 +138,70 @@
       <libsource lib="Device" part="Fuse_Small" description="Fuse, small symbol"/>
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FDC7B10</tstamp>
+    </comp>
+    <comp ref="D3">
+      <value>LED_TX</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBF421C</tstamp>
+    </comp>
+    <comp ref="D4">
+      <value>LED_RX</value>
+      <footprint>LED_SMD:LED_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="LED_Small" description="Light emitting diode, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC0228C</tstamp>
+    </comp>
+    <comp ref="R1">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC3C031</tstamp>
+    </comp>
+    <comp ref="R2">
+      <value>2.2k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC4FF68</tstamp>
+    </comp>
+    <comp ref="U3">
+      <value>CP2104</value>
+      <footprint>Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm</footprint>
+      <datasheet>https://www.silabs.com/documents/public/data-sheets/cp2104.pdf</datasheet>
+      <libsource lib="Interface_USB" part="CP2104" description="Single-Chip USB-to-UART Bridge, USB 2.0 Full-Speed, 2Mbps UART, QFN package"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FBDC8EF</tstamp>
+    </comp>
+    <comp ref="C10">
+      <value>4.7u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FC88F0C</tstamp>
+    </comp>
+    <comp ref="C9">
+      <value>1u</value>
+      <footprint>Capacitor_SMD:C_0603_1608Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="C_Small" description="Unpolarized capacitor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCA37EC</tstamp>
+    </comp>
+    <comp ref="R6">
+      <value>4.7k</value>
+      <footprint>Resistor_SMD:R_0402_1005Metric</footprint>
+      <datasheet>~</datasheet>
+      <libsource lib="Device" part="R_Small" description="Resistor, small symbol"/>
+      <sheetpath names="/" tstamps="/"/>
+      <tstamp>5FCBF8EE</tstamp>
     </comp>
   </components>
   <libparts>
@@ -323,35 +347,43 @@
         <pin num="2" name="~" type="passive"/>
       </pins>
     </libpart>
-    <libpart lib="Interface_USB" part="FT230XQ">
-      <description>Full Speed USB to Basic UART, QFN-16</description>
-      <docs>https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT230X.pdf</docs>
+    <libpart lib="Interface_USB" part="CP2104">
+      <description>Single-Chip USB-to-UART Bridge, USB 2.0 Full-Speed, 2Mbps UART, QFN package</description>
+      <docs>https://www.silabs.com/documents/public/data-sheets/cp2104.pdf</docs>
       <footprints>
-        <fp>QFN*1EP*4x4mm*P0.65mm*</fp>
+        <fp>QFN*4x4mm*P0.5mm*</fp>
       </footprints>
       <fields>
         <field name="Reference">U</field>
-        <field name="Value">FT230XQ</field>
-        <field name="Footprint">Package_DFN_QFN:QFN-16-1EP_4x4mm_P0.65mm_EP2.1x2.1mm</field>
+        <field name="Value">CP2104</field>
+        <field name="Footprint">Package_DFN_QFN:QFN-24-1EP_4x4mm_P0.5mm_EP2.6x2.6mm</field>
       </fields>
       <pins>
-        <pin num="1" name="VCCIO" type="power_in"/>
-        <pin num="2" name="RXD" type="input"/>
-        <pin num="3" name="GND" type="power_in"/>
-        <pin num="4" name="~CTS" type="input"/>
-        <pin num="5" name="CBUS2" type="BiDi"/>
-        <pin num="6" name="USBDP" type="BiDi"/>
-        <pin num="7" name="USBDM" type="BiDi"/>
-        <pin num="8" name="3V3OUT" type="power_out"/>
-        <pin num="9" name="~RESET" type="input"/>
-        <pin num="10" name="VCC" type="power_in"/>
-        <pin num="11" name="CBUS1" type="BiDi"/>
-        <pin num="12" name="CBUS0" type="BiDi"/>
-        <pin num="13" name="GND" type="power_in"/>
-        <pin num="14" name="CBUS3" type="BiDi"/>
-        <pin num="15" name="TXD" type="output"/>
-        <pin num="16" name="~RTS" type="output"/>
-        <pin num="17" name="GND" type="power_in"/>
+        <pin num="1" name="RI" type="input"/>
+        <pin num="2" name="GND" type="power_in"/>
+        <pin num="3" name="D+" type="BiDi"/>
+        <pin num="4" name="D-" type="BiDi"/>
+        <pin num="5" name="VIO" type="power_in"/>
+        <pin num="6" name="VDD" type="power_in"/>
+        <pin num="7" name="REGIN" type="power_in"/>
+        <pin num="8" name="VBUS" type="input"/>
+        <pin num="9" name="~RST" type="BiDi"/>
+        <pin num="10" name="VIO/NC" type="power_out"/>
+        <pin num="11" name="GPIO.3" type="BiDi"/>
+        <pin num="12" name="GPIO.2" type="BiDi"/>
+        <pin num="13" name="GPIO.1" type="BiDi"/>
+        <pin num="14" name="GPIO.0" type="BiDi"/>
+        <pin num="15" name="~SUSPEND" type="output"/>
+        <pin num="16" name="VPP" type="passive"/>
+        <pin num="17" name="SUSPEND" type="output"/>
+        <pin num="18" name="CTS" type="input"/>
+        <pin num="19" name="RTS" type="output"/>
+        <pin num="20" name="RXD" type="input"/>
+        <pin num="21" name="TXD" type="output"/>
+        <pin num="22" name="DSR" type="input"/>
+        <pin num="23" name="DTR" type="output"/>
+        <pin num="24" name="DCD" type="input"/>
+        <pin num="25" name="PAD" type="power_in"/>
       </pins>
     </libpart>
     <libpart lib="Mechanical" part="MountingHole">
@@ -429,119 +461,157 @@
     </library>
   </libraries>
   <nets>
-    <net code="1" name="GND">
-      <node ref="R5" pin="2"/>
-      <node ref="J1" pin="6"/>
-      <node ref="J1" pin="5"/>
-      <node ref="C7" pin="2"/>
-      <node ref="J2" pin="6"/>
-      <node ref="U2" pin="17"/>
-      <node ref="U2" pin="13"/>
-      <node ref="U2" pin="3"/>
+    <net code="1" name="Net-(U3-Pad1)">
+      <node ref="U3" pin="1"/>
+    </net>
+    <net code="2" name="Net-(U3-Pad10)">
+      <node ref="U3" pin="10"/>
+    </net>
+    <net code="3" name="Net-(U3-Pad11)">
+      <node ref="U3" pin="11"/>
+    </net>
+    <net code="4" name="Net-(U3-Pad12)">
+      <node ref="U3" pin="12"/>
+    </net>
+    <net code="5" name="Net-(D4-Pad1)">
+      <node ref="U3" pin="13"/>
+      <node ref="D4" pin="1"/>
+    </net>
+    <net code="6" name="Net-(D3-Pad1)">
+      <node ref="D3" pin="1"/>
+      <node ref="U3" pin="14"/>
+    </net>
+    <net code="7" name="Net-(U3-Pad15)">
+      <node ref="U3" pin="15"/>
+    </net>
+    <net code="8" name="Net-(U3-Pad17)">
+      <node ref="U3" pin="17"/>
+    </net>
+    <net code="9" name="Net-(U3-Pad18)">
+      <node ref="U3" pin="18"/>
+    </net>
+    <net code="10" name="Net-(U3-Pad19)">
+      <node ref="U3" pin="19"/>
+    </net>
+    <net code="11" name="UART_TXD">
+      <node ref="J2" pin="8"/>
+      <node ref="U3" pin="20"/>
+    </net>
+    <net code="12" name="UART_RXD">
+      <node ref="J2" pin="10"/>
+      <node ref="U3" pin="21"/>
+    </net>
+    <net code="13" name="Net-(U3-Pad22)">
+      <node ref="U3" pin="22"/>
+    </net>
+    <net code="14" name="Net-(U3-Pad23)">
+      <node ref="U3" pin="23"/>
+    </net>
+    <net code="15" name="Net-(U3-Pad24)">
+      <node ref="U3" pin="24"/>
+    </net>
+    <net code="16" name="GND">
+      <node ref="C10" pin="2"/>
       <node ref="C4" pin="2"/>
-      <node ref="C6" pin="2"/>
-      <node ref="J2" pin="9"/>
+      <node ref="J1" pin="5"/>
+      <node ref="R5" pin="2"/>
       <node ref="U1" pin="1"/>
-      <node ref="C8" pin="2"/>
+      <node ref="C6" pin="2"/>
+      <node ref="C9" pin="2"/>
+      <node ref="J2" pin="9"/>
+      <node ref="J2" pin="6"/>
+      <node ref="U3" pin="2"/>
       <node ref="C5" pin="2"/>
-      <node ref="C3" pin="2"/>
-      <node ref="C2" pin="2"/>
-      <node ref="C1" pin="2"/>
+      <node ref="C8" pin="2"/>
+      <node ref="U3" pin="25"/>
+      <node ref="J1" pin="6"/>
     </net>
-    <net code="2" name="Net-(D1-Pad2)">
-      <node ref="FB1" pin="1"/>
-      <node ref="D1" pin="2"/>
+    <net code="17" name="Net-(D3-Pad2)">
+      <node ref="R1" pin="2"/>
+      <node ref="D3" pin="2"/>
     </net>
-    <net code="3" name="Net-(D1-Pad1)">
-      <node ref="F1" pin="1"/>
-      <node ref="D1" pin="1"/>
+    <net code="18" name="Net-(D4-Pad2)">
+      <node ref="D4" pin="2"/>
+      <node ref="R2" pin="1"/>
     </net>
-    <net code="4" name="Net-(C5-Pad1)">
-      <node ref="U1" pin="3"/>
-      <node ref="C5" pin="1"/>
-      <node ref="F1" pin="2"/>
-    </net>
-    <net code="5" name="Net-(U2-Pad4)">
-      <node ref="U2" pin="4"/>
-    </net>
-    <net code="6" name="Net-(U2-Pad12)">
-      <node ref="U2" pin="12"/>
-    </net>
-    <net code="7" name="Net-(U2-Pad11)">
-      <node ref="U2" pin="11"/>
-    </net>
-    <net code="8" name="Net-(U2-Pad5)">
-      <node ref="U2" pin="5"/>
-    </net>
-    <net code="9" name="Net-(U2-Pad14)">
-      <node ref="U2" pin="14"/>
-    </net>
-    <net code="10" name="Net-(U2-Pad16)">
-      <node ref="U2" pin="16"/>
-    </net>
-    <net code="11" name="+5V">
-      <node ref="C8" pin="1"/>
-      <node ref="U2" pin="10"/>
+    <net code="19" name="VIO">
       <node ref="D2" pin="2"/>
-      <node ref="C3" pin="1"/>
-      <node ref="C2" pin="1"/>
+      <node ref="C8" pin="1"/>
+      <node ref="C9" pin="1"/>
       <node ref="U1" pin="2"/>
-      <node ref="C1" pin="1"/>
+      <node ref="R2" pin="2"/>
+      <node ref="U3" pin="7"/>
+      <node ref="U3" pin="6"/>
+      <node ref="U3" pin="5"/>
+      <node ref="R1" pin="1"/>
+      <node ref="U3" pin="8"/>
+      <node ref="R6" pin="1"/>
     </net>
-    <net code="12" name="USB_DP">
-      <node ref="J1" pin="3"/>
-      <node ref="R4" pin="1"/>
-      <node ref="C4" pin="1"/>
+    <net code="20" name="3V3">
+      <node ref="J2" pin="1"/>
     </net>
-    <net code="13" name="Net-(J1-Pad4)">
-      <node ref="J1" pin="4"/>
+    <net code="21" name="Net-(R6-Pad2)">
+      <node ref="U3" pin="9"/>
+      <node ref="R6" pin="2"/>
     </net>
-    <net code="14" name="USB_DM">
+    <net code="22" name="Net-(C10-Pad1)">
+      <node ref="U3" pin="16"/>
+      <node ref="C10" pin="1"/>
+    </net>
+    <net code="23" name="Net-(C5-Pad1)">
+      <node ref="U1" pin="3"/>
+      <node ref="F1" pin="2"/>
+      <node ref="C5" pin="1"/>
+    </net>
+    <net code="24" name="5V">
+      <node ref="J2" pin="4"/>
+      <node ref="J2" pin="2"/>
+    </net>
+    <net code="25" name="Net-(J2-Pad3)">
+      <node ref="J2" pin="3"/>
+    </net>
+    <net code="26" name="Net-(J2-Pad5)">
+      <node ref="J2" pin="5"/>
+    </net>
+    <net code="27" name="Net-(J2-Pad7)">
+      <node ref="J2" pin="7"/>
+    </net>
+    <net code="28" name="Net-(R3-Pad2)">
+      <node ref="U3" pin="4"/>
+      <node ref="R3" pin="2"/>
+    </net>
+    <net code="29" name="Net-(R4-Pad2)">
+      <node ref="R4" pin="2"/>
+      <node ref="U3" pin="3"/>
+    </net>
+    <net code="30" name="USB_DM">
+      <node ref="R3" pin="1"/>
       <node ref="C6" pin="1"/>
       <node ref="J1" pin="2"/>
-      <node ref="R3" pin="1"/>
     </net>
-    <net code="15" name="Net-(C7-Pad1)">
-      <node ref="C7" pin="1"/>
-      <node ref="R3" pin="2"/>
-      <node ref="U2" pin="8"/>
-      <node ref="R4" pin="2"/>
-      <node ref="U2" pin="1"/>
-      <node ref="U2" pin="6"/>
-      <node ref="U2" pin="7"/>
-      <node ref="U2" pin="9"/>
+    <net code="31" name="USB_DP">
+      <node ref="C4" pin="1"/>
+      <node ref="R4" pin="1"/>
+      <node ref="J1" pin="3"/>
     </net>
-    <net code="16" name="Net-(D2-Pad1)">
-      <node ref="D2" pin="1"/>
+    <net code="32" name="Net-(D2-Pad1)">
       <node ref="R5" pin="1"/>
+      <node ref="D2" pin="1"/>
     </net>
-    <net code="17" name="VBUS">
+    <net code="33" name="VBUS">
       <node ref="J1" pin="1"/>
       <node ref="FB1" pin="2"/>
     </net>
-    <net code="18" name="Net-(J2-Pad7)">
-      <node ref="J2" pin="7"/>
+    <net code="34" name="Net-(J1-Pad4)">
+      <node ref="J1" pin="4"/>
     </net>
-    <net code="19" name="UART_TXD">
-      <node ref="U2" pin="2"/>
-      <node ref="J2" pin="8"/>
+    <net code="35" name="Net-(D1-Pad1)">
+      <node ref="D1" pin="1"/>
+      <node ref="F1" pin="1"/>
     </net>
-    <net code="20" name="Net-(J2-Pad5)">
-      <node ref="J2" pin="5"/>
-    </net>
-    <net code="21" name="Net-(J2-Pad3)">
-      <node ref="J2" pin="3"/>
-    </net>
-    <net code="22" name="3V3">
-      <node ref="J2" pin="1"/>
-    </net>
-    <net code="23" name="UART_RXD">
-      <node ref="J2" pin="10"/>
-      <node ref="U2" pin="15"/>
-    </net>
-    <net code="24" name="5V">
-      <node ref="J2" pin="2"/>
-      <node ref="J2" pin="4"/>
+    <net code="36" name="Net-(D1-Pad2)">
+      <node ref="D1" pin="2"/>
+      <node ref="FB1" pin="1"/>
     </net>
   </nets>
 </export>

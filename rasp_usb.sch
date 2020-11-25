@@ -480,8 +480,6 @@ Wire Notes Line
 	5200 5850 1000 5850
 Wire Notes Line
 	1000 5850 1000 2700
-Text Notes 1000 2600 0    50   ~ 0
-FTDI
 Wire Notes Line
 	1000 1100 2250 1100
 Wire Notes Line
@@ -500,4 +498,6 @@ Wire Notes Line
 	5400 2350 5400 1100
 Text Notes 5400 1050 0    50   ~ 0
 Conn
+Text Notes 1050 2650 0    50   ~ 0
+USB IC
 $EndSCHEMATC

@@ -1,7 +1,7 @@
-Designator,Value,Package,MidX,MidY,Rotation,Layer
-C4,47p,C_0402_1005Metric,104.75,-67.5,180,top
+Desinator,Value,Package,MidX,MidY,Rotation,Layer
+C4,47p,C_0402_1005Metric,104.75,-67.75,180,top
 C5,100n,C_0603_1608Metric,103.35,-76.9,270,top
-C6,47p,C_0402_1005Metric,104.75,-68.5,180,top
+C6,47p,C_0402_1005Metric,104.75,-68.75,180,top
 C8,100n,C_0603_1608Metric,103.35,-79.95,90,top
 C9,1u,C_0603_1608Metric,116.5,-65.9,0,top
 C10,4.7u,C_0603_1608Metric,117.45,-77.15,270,top
@@ -11,11 +11,11 @@ D3,LED_TX,LED_0402_1005Metric,114.65,-76.3,270,top
 D4,LED_RX,LED_0402_1005Metric,113.7,-76.3,270,top
 F1,500mA,Fuse_0603_1608Metric,103.35,-73.9,270,top
 FB1,Ferrite_Bead_Small,L_0603_1608Metric,109.5,-71,0,top
-J1,USB_B_Micro,USB_Micro-B_Amphenol_10103594-0001LF_Horizontal,107.25,-63,180,top
+J1,USB_B_Micro,USB_Micro-B_Amphenol_10104110_Horizontal,107.75,-64.25,180,top
 R1,2.2k,R_0402_1005Metric,114.65,-78.25,90,top
 R2,2.2k,R_0402_1005Metric,113.7,-78.25,270,top
-R3,27,R_0402_1005Metric,108.75,-67.75,270,top
-R4,27,R_0402_1005Metric,107.275,-67,270,top
+R3,27,R_0402_1005Metric,108.75,-68.75,270,top
+R4,27,R_0402_1005Metric,107.25,-68.25,270,top
 R5,2.2k,R_0402_1005Metric,115.175,-64.125,0,top
 R6,4.7k,R_0402_1005Metric,112.15,-69.9,270,top
 U1,AMS1117-5.0,SOT-223-3_TabPin2,107.75,-76.25,270,top

@@ -7,7 +7,7 @@ Sheet 1 1
 Title "RaspberryPI USB serial shield mini"
 Date "2020-11-23"
 Rev ""
-Comp "BitEngineers"
+Comp ""
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -247,23 +247,12 @@ Wire Wire Line
 	4950 1900 4450 1900
 Connection ~ 4450 1900
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5FCD5980
-P 5350 3550
-F 0 "H1" H 5450 3596 50  0000 L CNN
-F 1 "MountingHole" H 5450 3505 50  0000 L CNN
-F 2 "MountingHole:MountingHole_2.7mm_M2.5" H 5350 3550 50  0001 C CNN
-F 3 "~" H 5350 3550 50  0001 C CNN
-	1    5350 3550
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector:USB_B_Micro J1
 U 1 1 5FD1A450
 P 1500 1650
 F 0 "J1" H 1557 2117 50  0000 C CNN
 F 1 "USB_B_Micro" H 1557 2026 50  0000 C CNN
-F 2 "Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal" H 1650 1600 50  0001 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10104110_Horizontal" H 1650 1600 50  0001 C CNN
 F 3 "~" H 1650 1600 50  0001 C CNN
 	1    1500 1650
 	1    0    0    -1  

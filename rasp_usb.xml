@@ -2,12 +2,12 @@
 <export version="D">
   <design>
     <source>/home/jun/develop/biteng/rasp_uart_dongle/rasp_usb/rasp_usb.sch</source>
-    <date>Wed Nov 25 12:12:46 2020</date>
+    <date>Thu Nov 26 00:30:14 2020</date>
     <tool>Eeschema 5.1.8</tool>
     <sheet number="1" name="/" tstamps="/">
       <title_block>
         <title>RaspberryPI USB serial shield mini</title>
-        <company>BitEngineers</company>
+        <company/>
         <rev/>
         <date>2020-11-23</date>
         <source>rasp_usb.sch</source>
@@ -115,17 +115,9 @@
       <sheetpath names="/" tstamps="/"/>
       <tstamp>5FC852F8</tstamp>
     </comp>
-    <comp ref="H1">
-      <value>MountingHole</value>
-      <footprint>MountingHole:MountingHole_2.7mm_M2.5</footprint>
-      <datasheet>~</datasheet>
-      <libsource lib="Mechanical" part="MountingHole" description="Mounting Hole without connection"/>
-      <sheetpath names="/" tstamps="/"/>
-      <tstamp>5FCD5980</tstamp>
-    </comp>
     <comp ref="J1">
       <value>USB_B_Micro</value>
-      <footprint>Connector_USB:USB_Micro-B_Amphenol_10103594-0001LF_Horizontal</footprint>
+      <footprint>Connector_USB:USB_Micro-B_Amphenol_10104110_Horizontal</footprint>
       <datasheet>~</datasheet>
       <libsource lib="Connector" part="USB_B_Micro" description="USB Micro Type B connector"/>
       <sheetpath names="/" tstamps="/"/>
@@ -386,17 +378,6 @@
         <pin num="25" name="PAD" type="power_in"/>
       </pins>
     </libpart>
-    <libpart lib="Mechanical" part="MountingHole">
-      <description>Mounting Hole without connection</description>
-      <docs>~</docs>
-      <footprints>
-        <fp>MountingHole*</fp>
-      </footprints>
-      <fields>
-        <field name="Reference">H</field>
-        <field name="Value">MountingHole</field>
-      </fields>
-    </libpart>
     <libpart lib="Regulator_Linear" part="AP1117-15">
       <aliases>
         <alias>AP1117-18</alias>
@@ -452,9 +433,6 @@
     </library>
     <library logical="Interface_USB">
       <uri>/usr/share/kicad/library/Interface_USB.lib</uri>
-    </library>
-    <library logical="Mechanical">
-      <uri>/usr/share/kicad/library/Mechanical.lib</uri>
     </library>
     <library logical="Regulator_Linear">
       <uri>/usr/share/kicad/library/Regulator_Linear.lib</uri>

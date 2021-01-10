@@ -24,20 +24,10 @@ F 3 "~" H 6050 1700 50  0001 C CNN
 	1    6050 1700
 	1    0    0    -1  
 $EndComp
-Text GLabel 6350 1500 2    50   Input ~ 0
-5V
-Text GLabel 6350 1700 2    50   Input ~ 0
-GND
 Text GLabel 6350 1800 2    50   Input ~ 0
 UART_TXD
 Text GLabel 6350 1900 2    50   Input ~ 0
 UART_RXD
-Text GLabel 5850 1900 0    50   Input ~ 0
-GND
-Text GLabel 5850 1500 0    50   Input ~ 0
-3V3
-Text GLabel 6350 1600 2    50   Input ~ 0
-5V
 NoConn ~ 5850 1600
 NoConn ~ 5850 1700
 NoConn ~ 5850 1800
@@ -51,21 +41,6 @@ Wire Notes Line
 	5400 2350 5400 1100
 Text Notes 5400 1050 0    50   ~ 0
 Conn
-Text GLabel 5750 2900 0    50   Input ~ 0
-3V3
-$Comp
-L power:PWR_FLAG #FLG0102
-U 1 1 5FD5B3BE
-P 6000 2900
-F 0 "#FLG0102" H 6000 2975 50  0001 C CNN
-F 1 "PWR_FLAG" H 6000 3073 50  0000 C CNN
-F 2 "" H 6000 2900 50  0001 C CNN
-F 3 "~" H 6000 2900 50  0001 C CNN
-	1    6000 2900
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	5750 2900 6000 2900
 $Sheet
 S 2150 900  1050 500 
 U 5FFB025F
@@ -84,4 +59,65 @@ U 5FFDA578
 F0 "Sheet5FFDA577" 50
 F1 "usb_ic.sch" 50
 $EndSheet
+$Comp
+L power:+5V #PWR0110
+U 1 1 5FFC6082
+P 6600 1500
+F 0 "#PWR0110" H 6600 1350 50  0001 C CNN
+F 1 "+5V" H 6615 1673 50  0000 C CNN
+F 2 "" H 6600 1500 50  0001 C CNN
+F 3 "" H 6600 1500 50  0001 C CNN
+	1    6600 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1500 6600 1500
+Wire Wire Line
+	6350 1600 6600 1600
+Wire Wire Line
+	6600 1600 6600 1500
+Connection ~ 6600 1500
+$Comp
+L power:+3.3V #PWR0111
+U 1 1 5FFC6F8E
+P 5550 1500
+F 0 "#PWR0111" H 5550 1350 50  0001 C CNN
+F 1 "+3.3V" H 5565 1673 50  0000 C CNN
+F 2 "" H 5550 1500 50  0001 C CNN
+F 3 "" H 5550 1500 50  0001 C CNN
+	1    5550 1500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 1500 5850 1500
+$Comp
+L power:GND #PWR0112
+U 1 1 5FFC7D97
+P 5550 1900
+F 0 "#PWR0112" H 5550 1650 50  0001 C CNN
+F 1 "GND" H 5555 1727 50  0000 C CNN
+F 2 "" H 5550 1900 50  0001 C CNN
+F 3 "" H 5550 1900 50  0001 C CNN
+	1    5550 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5850 1900 5550 1900
+$Comp
+L power:GND #PWR0113
+U 1 1 5FFC88A9
+P 6650 2050
+F 0 "#PWR0113" H 6650 1800 50  0001 C CNN
+F 1 "GND" H 6655 1877 50  0000 C CNN
+F 2 "" H 6650 2050 50  0001 C CNN
+F 3 "" H 6650 2050 50  0001 C CNN
+	1    6650 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6350 1700 6850 1700
+Wire Wire Line
+	6850 1700 6850 2050
+Wire Wire Line
+	6850 2050 6650 2050
 $EndSCHEMATC

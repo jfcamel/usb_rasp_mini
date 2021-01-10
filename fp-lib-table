@@ -1,3 +1,4 @@
 (fp_lib_table
   (lib (name digikey)(type KiCad)(uri /home/jun/develop/biteng/kicad_proj/digikey-kicad-library/digikey-footprints.pretty)(options "")(descr ""))
+  (lib (name logo)(type KiCad)(uri /home/jun/develop/biteng/rasp_uart_dongle/rasp_usb/logo.pretty)(options "")(descr ""))
 )

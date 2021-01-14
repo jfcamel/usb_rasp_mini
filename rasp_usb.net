@@ -1,7 +1,7 @@
 (export (version D)
   (design
     (source /home/jun/develop/biteng/rasp_uart_dongle/rasp_usb/rasp_usb.sch)
-    (date "Sun Jan 10 16:49:38 2021")
+    (date "Thu Jan 14 21:24:24 2021")
     (tool "Eeschema 5.1.8")
     (sheet (number 1) (name /) (tstamps /)
       (title_block

@@ -4,7 +4,7 @@ Comment,Designator,Footprint,LCSC Part #
 "1u Unpolarized capacitor, small symbol",C9,C_0603_1608Metric,C15849
 "4.7u Unpolarized capacitor, small symbol",C10,C_0603_1608Metric,C19666
 "D_Small Diode, small symbol",D1,D_SOD-123,C8598
-"LED_PWR Light emitting diode, small symbol",D2,LED_0402_1005Metric,C71911
+"LED_PWR Light emitting diode, small symbol",D2,LED_0402_1005Metric,C74339
 "LED_TX Light emitting diode, small symbol",D3,LED_0402_1005Metric,C74338
 "LED_RX Light emitting diode, small symbol",D4,LED_0402_1005Metric,C130721
 "500mA Fuse, small symbol",F1,Fuse_0603_1608Metric,C69679
